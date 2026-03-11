@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // 게시글 목록을 가져오는 함수
   function fetchBoardList() {
     //로컬 테스트용
-    // const API_URL = "http://localhost:8080/api/boards";
+    // const API_URL = "http://localhost:8080/api/board";
 
     //배포용
-    const API_URL = "/api/boards";
+    const API_URL = "/api/board";
     fetch(API_URL)
       .then((response) => response.text())
       .then((data) => {

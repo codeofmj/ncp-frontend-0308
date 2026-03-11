@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     //로컬 테스트용
-    const API_URL = "http://localhost:8080/api/boards/insert";
+    const API_URL = "http://localhost:8080/api/board/insert";
 
     //배포용
-    // const API_URL = "/api/boards/insert";
+    // const API_URL = "/api/board/insert";
 
     fetch(API_URL, {
       method: "POST",

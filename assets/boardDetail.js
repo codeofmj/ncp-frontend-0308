@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const boardNo = new URLSearchParams(window.location.search).get("no");
 
   //로컬 테스트용
-  const API_URL = `http://localhost:8080/api/boards/${boardNo}`;
+  const API_URL = `http://localhost:8080/api/board/${boardNo}`;
 
   //배포용
-  // const API_URL = `/api/boards/${boardNo}`;
+  // const API_URL = `/api/board/${boardNo}`;
 
   fetch(API_URL)
     .then((response) => response.json())
